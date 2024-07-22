@@ -115,32 +115,4 @@
 
     </script>
   </body>
-  <head>
-   ## The Ad Placement tag ##
-   # Configure your monetisation settings here and place the standard
-   # boilerplate code for initialising the API functions. This code may change
-   # depending on where the game is being distributed (eg. a website, a super
-   # app, different publishers).
-   <script async
-       data-ad-frequency-hint="30s"
-       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-6314152411591637" # your publisher ID
-       crossorigin="anonymous">
-   </script>
-   <script>
-      window.adsbygoogle = window.adsbygoogle || [];
-      var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
-   </script>
-   [...]
-</head>
-<body>
-   [...]
-
-   ## Your game code ##
-   # This is your game logic that renders the playable canvas. Once you've
-   # integrated your game with the Ad Placement API, this code won't change due
-   # to ad configuration updates.
-   <canvas id="game_canvas" width="100%" height="100%"></canvas>
-   <script src="game.js"></script>
-   [...]
-</body>
 </html>
